@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kisha\\Downloads\\CRM_Mobile\\CRM_Mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
+            "outputFile": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kisha\\.gradle\\caches\\transforms-3\\0e3d0c4f5635e0c3c0cfa0e0064e8f7e\\transformed\\jetified-play-services-basement-17.0.0\\res\\values-is\\values.xml",
