@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kisha\\Downloads\\CRM_Mobile\\CRM_Mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kisha\\.gradle\\caches\\transforms-3\\0723fe7ecd4c2478c3e1bb5dcd2061ba\\transformed\\jetified-viewpager2-1.0.0\\res\\values\\values.xml",
@@ -61,23 +61,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kisha\\Downloads\\CRM_Mobile\\CRM_Mobile\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "47",
-                        "endOffsets": "59"
-                    },
-                    "to": {
-                        "startLines": "696",
-                        "startColumns": "4",
-                        "startOffsets": "44676",
-                        "endColumns": "47",
-                        "endOffsets": "44719"
-                    }
-                },
-                {
                     "source": "C:\\Users\\kisha\\.gradle\\caches\\transforms-3\\9f18c6b50baa776d71894ad120630276\\transformed\\core-1.6.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,104,111,159,191,228",
@@ -128,25 +111,6 @@
                         "startOffsets": "40735",
                         "endColumns": "53",
                         "endOffsets": "40784"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kisha\\Downloads\\CRM_Mobile\\CRM_Mobile\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "844",
-                        "startColumns": "4",
-                        "startOffsets": "62534",
-                        "endLines": "847",
-                        "endColumns": "12",
-                        "endOffsets": "62747"
                     }
                 },
                 {
@@ -241,6 +205,23 @@
                     }
                 },
                 {
+                    "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "161,269",
+                        "endColumns": "63,68",
+                        "endOffsets": "220,333"
+                    },
+                    "to": {
+                        "startLines": "660,661",
+                        "startColumns": "4,4",
+                        "startOffsets": "42157,42221",
+                        "endColumns": "63,68",
+                        "endOffsets": "42216,42285"
+                    }
+                },
+                {
                     "source": "C:\\Users\\kisha\\.gradle\\caches\\transforms-3\\221c71d43dbd5b88bd9ef5161912c98c\\transformed\\jetified-react-native-0.67.4\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,74,78,81,84,88,92,95,98,99,100,109,116,123,126,129,132,138",
@@ -257,6 +238,25 @@
                         "endLines": "114,115,544,577,578,579,580,581,601,634,635,695,699,700,701,702,703,704,705,706,707,708,709,710,711,712,713,714,715,716,717,718,719,720,721,722,723,724,725,726,727,728,734,757,760,761,762,763,764,765,805,806,807,808,810,811,812,813,814,815,816,817,819,820,821,822,831,835,2692,2695,2707,2711,3044,3047,3283,3330,3339,3346,3375,3378,3381,3481,3487,4461",
                         "endColumns": "62,62,50,47,48,47,48,48,42,53,47,72,122,95,88,107,116,119,119,101,102,110,106,102,110,168,167,116,109,114,112,155,107,112,90,110,168,97,126,124,94,106,79,75,72,86,70,70,77,79,85,83,71,81,83,76,86,84,78,74,72,88,76,77,72,77,10,10,12,12,10,10,12,12,25,34,10,10,10,10,10,12,12,10",
                         "endOffsets": "7039,7102,35780,37738,37787,37835,37884,37933,38936,40639,40687,44671,45123,45219,45308,45416,45533,45653,45773,45875,45978,46089,46196,46299,46410,46579,46747,46864,46974,47089,47202,47358,47466,47579,47670,47781,47950,48048,48175,48300,48395,48502,49009,51886,52266,52353,52424,52495,52573,52653,59712,59796,59868,59950,60087,60164,60251,60336,60415,60490,60563,60652,60800,60878,60951,61029,61719,61967,182947,183138,183658,183864,206538,206727,223405,226459,226997,227415,228935,229112,229291,237536,237901,300785"
+                    }
+                },
+                {
+                    "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "844",
+                        "startColumns": "4",
+                        "startOffsets": "62534",
+                        "endLines": "847",
+                        "endColumns": "12",
+                        "endOffsets": "62747"
                     }
                 },
                 {
@@ -370,23 +370,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kisha\\Downloads\\CRM_Mobile\\CRM_Mobile\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "161,269",
-                        "endColumns": "63,68",
-                        "endOffsets": "220,333"
-                    },
-                    "to": {
-                        "startLines": "660,661",
-                        "startColumns": "4,4",
-                        "startOffsets": "42157,42221",
-                        "endColumns": "63,68",
-                        "endOffsets": "42216,42285"
-                    }
-                },
-                {
                     "source": "C:\\Users\\kisha\\.gradle\\caches\\transforms-3\\4f6ddf37a5c206bb5b6a4ce7f206560c\\transformed\\jetified-drawee-2.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,141",
@@ -403,6 +386,23 @@
                         "endLines": "6145,6882",
                         "endColumns": "22,22",
                         "endOffsets": "392891,428849"
+                    }
+                },
+                {
+                    "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "47",
+                        "endOffsets": "59"
+                    },
+                    "to": {
+                        "startLines": "696",
+                        "startColumns": "4",
+                        "startOffsets": "44676",
+                        "endColumns": "47",
+                        "endOffsets": "44719"
                     }
                 }
             ]
