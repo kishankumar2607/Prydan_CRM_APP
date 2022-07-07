@@ -74,7 +74,7 @@ export default StyleSheet.create({
 		backgroundColor: colors.lightGrey,
 	},
 	optionsText: {
-		width: moderateScale(30),
+		width: moderateScale(40),
 		fontSize: moderateScale(16),
 		textAlign: "center",
 		color: colors.lightGrey,
