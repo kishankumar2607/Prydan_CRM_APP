@@ -1,89 +1,109 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
 import { responsiveFontSize } from "react-native-responsive-dimensions";
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: colors.white,
-  },
-  mainView: {
-    backgroundColor: colors.white,
-    alignItems: "center",
-  },
-  mainContainerView: {
-    backgroundColor: colors.white,
-    flex: 1,
-  },
-  logo: {
-    marginVertical: 50,
-    alignItems: "center",
-    flex: 1,
-  },
-  logoView: {
-    marginVertical: 30,
-  },
+import {
+	scale,
+	verticalScale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 
-  paragraphStyle: {
-    textAlign: "center",
-    fontSize: 16,
-  },
-  introImageStyle: {
-    height: 80,
-    width: 144,
-  },
-  introTextStyle: {
-    fontSize: responsiveFontSize(1.8),
-    textAlign: "center",
-    marginHorizontal: 30,
-    letterSpacing: 1,
-    lineHeight: 25,
-    marginVertical: 15,
-    color: colors.black,
-  },
-  introTitleStyle: {
-    fontSize: responsiveFontSize(2.5),
-    textAlign: "center",
-    color: colors.black,
-    marginVertical: 10,
-    letterSpacing: 1,
-    fontWeight: "700",
-  },
-  introSmallTextStyle: {
-    fontSize: responsiveFontSize(1.8),
-    letterSpacing: 1,
-    lineHeight: 25,
-    marginHorizontal: 30,
-    textAlign: "center",
-    justifyContent: "center",
-    color: colors.black,
-    marginVertical: 25,
-  },
-  buttonView: {
-    flexDirection: "row",
-    backgroundColor: colors.white,
-  },
-  containerViewLogin: {
-    marginHorizontal: 20,
-    marginVertical: 10,
-  },
-  containerViewSignUP: {
-    marginHorizontal: 20,
-    marginVertical: 10,
-  },
-  buttonCircle: {
-    width: 30,
-    height: 30,
-    backgroundColor: colors.buttonBg,
-    borderRadius: 20,
-    justifyContent: "center",
-    alignItems: "center",
-    marginVertical: 5,
-    flex: 1,
-  },
-  activeView: {
-    backgroundColor: colors.Amber,
-  },
+const styles = StyleSheet.create({
+	container: {
+		// flex: 1,
+		alignItems: "center",
+		// backgroundColor: colors.white,
+		backgroundColor: colors.blue,
+	},
+	mainView: {
+		flex: 1,
+		// backgroundColor: colors.white,
+		// backgroundColor: colors.blue,
+		alignItems: "center",
+	},
+	mainContainerView: {
+		backgroundColor: colors.white,
+		flex: 1,
+	},
+	logo: {
+		marginVertical: moderateVerticalScale(40),
+		marginBottom: moderateScale(1),
+		alignItems: "center",
+
+		// backgroundColor: colors.blue,
+		// flex: 1,
+	},
+	logoView: {
+		// flex: 1,
+		// marginVertical: moderateVerticalScale(1),
+		marginTop: moderateScale(10),
+		// backgroundColor: colors.blue,
+	},
+
+	// paragraphStyle: {
+	// 	textAlign: "center",
+	// 	fontSize: scale(1),
+	// },
+	introImageStyle: {
+		height: moderateScale(80),
+		width: moderateScale(144),
+	},
+	introTextStyle: {
+		fontSize: scale(13),
+		textAlign: "center",
+		marginHorizontal: moderateScale(30),
+		letterSpacing: scale(1),
+		lineHeight: moderateScale(22),
+		marginVertical: moderateVerticalScale(10),
+		color: colors.black,
+		// backgroundColor: colors.blue,
+	},
+	introTitleStyle: {
+		fontSize: scale(18),
+		textAlign: "center",
+		color: colors.black,
+		marginVertical: moderateVerticalScale(5),
+		letterSpacing: scale(1),
+		fontWeight: "600",
+
+		// backgroundColor: colors.blue,
+	},
+	introSmallTextStyle: {
+		fontSize: scale(13),
+		letterSpacing: scale(1),
+		lineHeight: moderateScale(22),
+		marginHorizontal: moderateScale(30),
+		textAlign: "center",
+		justifyContent: "center",
+		color: colors.black,
+		marginVertical: moderateVerticalScale(12),
+		// backgroundColor: colors.blue,
+	},
+	// buttonView: {
+	// 	flexDirection: "row",
+	// 	backgroundColor: colors.white,
+	// },
+	containerViewLogin: {
+		marginHorizontal: moderateScale(20),
+		marginVertical: moderateVerticalScale(10),
+	},
+	containerViewSignUP: {
+		marginHorizontal: moderateScale(20),
+		marginVertical: moderateVerticalScale(10),
+	},
+	buttonCircle: {
+		width: moderateScale(30),
+		height: moderateScale(30),
+		backgroundColor: colors.buttonBg,
+		borderRadius: moderateScale(20),
+		justifyContent: "center",
+		alignItems: "center",
+		marginVertical: moderateVerticalScale(5),
+		flex: 1,
+	},
+	activeView: {
+		backgroundColor: colors.Amber,
+	},
 });
 
 export default styles;
