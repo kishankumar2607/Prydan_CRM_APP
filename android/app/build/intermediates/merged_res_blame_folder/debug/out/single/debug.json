@@ -12,48 +12,16 @@
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_images_google.png"
     },
     {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_node_modules_reactnativeelementdropdown_src_assets_down.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativeelementdropdown_src_assets_down.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_linkedin.png.flat",
@@ -62,6 +30,10 @@
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_groupicon.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_images_groupicon.png"
+    },
+    {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_welcomethree.png.flat",
@@ -76,12 +48,12 @@
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnavigation_elements_src_assets_backiconmask.png"
     },
     {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_welcometwo.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_images_welcometwo.png"
+    },
+    {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_splashscreenlogo.png.flat",
@@ -92,8 +64,20 @@
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativedatepicker_date_icon.png"
     },
     {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_src_assets_images_logo.png.flat",
@@ -108,10 +92,6 @@
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable\\rn_edit_text_material.xml"
     },
     {
-        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
@@ -120,7 +100,15 @@
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_images_welcomefour.png"
     },
     {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
         "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "G:\\NEW CRM APP\\Prydan_CRM_APP\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     }
 ]
