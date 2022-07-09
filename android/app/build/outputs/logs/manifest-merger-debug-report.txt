@@ -89,9 +89,9 @@ INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\debug\AndroidManifes
 INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\debug\AndroidManifest.xml:2:1-13:12
 INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\debug\AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:2:3-27
+		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:2:3-26
 		INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml
-		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:2:3-27
+		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:2:3-26
 		INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml
@@ -167,7 +167,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\kisha\.
 	android:name
 		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:7:7-38
 		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:7:7-38
-activity#com.crm_mobile.MainActivity
+activity#com.prydancrm.MainActivity
 ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:13:7-23:18
 	android:label
 		ADDED from G:\NEW CRM APP\Prydan_CRM_APP\android\app\src\main\AndroidManifest.xml:15:9-41

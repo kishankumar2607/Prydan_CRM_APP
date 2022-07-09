@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.crm_mobile",
+  "applicationId": "com.prydancrm",
   "variantName": "debug",
   "elements": [
     {
