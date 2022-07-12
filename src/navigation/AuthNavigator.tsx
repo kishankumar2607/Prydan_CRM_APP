@@ -9,6 +9,8 @@ import {
   SetPassword,
   Google,
   ForgotFinal,
+  SplashScreen,
+  Today,
 } from "../screen";
 
 const Stack = createStackNavigator();
@@ -27,6 +29,8 @@ const AuthNavigator = () => (
     <Stack.Screen name="SetPassword" component={SetPassword} />
     <Stack.Screen name="Google" component={Google} />
     <Stack.Screen name="ForgotFinal" component={ForgotFinal} />
+    <Stack.Screen name="SplashScreen" component={SplashScreen} />
+    <Stack.Screen name="Today" component={Today} />
   </Stack.Navigator>
 );
 

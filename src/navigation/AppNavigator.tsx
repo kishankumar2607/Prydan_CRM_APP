@@ -93,19 +93,19 @@ const AppNavigator = () => (
         tabBarLabel: "Today",
         tabBarIcon: ({ focused }) => (
           <>
-            <Image
+            {/* <Image
               source={require("../assets/Images/Home.png")}
               style={{ tintColor: focused ? colors.Amber : colors.gray }}
             />
             <Text style={{ color: focused ? colors.Amber : colors.gray }}>
               Today
-            </Text>
+            </Text> */}
           </>
         ),
       }}
     />
 
-    <Tab.Screen
+    {/* <Tab.Screen
       name="Contact"
       component={Contact}
       options={{
@@ -121,8 +121,8 @@ const AppNavigator = () => (
           </>
         ),
       }}
-    />
-    <Tab.Screen
+    /> */}
+    {/* <Tab.Screen
       name="Application"
       component={ContactStackNavigator}
       options={{
@@ -139,8 +139,8 @@ const AppNavigator = () => (
           </>
         ),
       }}
-    />
-    <Tab.Screen
+    /> */}
+    {/* <Tab.Screen
       name="Position"
       component={CandidateStackNavigator}
       options={{
@@ -157,8 +157,8 @@ const AppNavigator = () => (
           </>
         ),
       }}
-    />
-    <Tab.Screen
+    /> */}
+    {/* <Tab.Screen
       name="More"
       component={Login}
       options={{
@@ -175,7 +175,7 @@ const AppNavigator = () => (
           </>
         ),
       }}
-    />
+    /> */}
   </Tab.Navigator>
 );
 

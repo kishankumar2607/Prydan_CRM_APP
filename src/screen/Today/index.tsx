@@ -82,7 +82,7 @@ const Today: FC = ({ navigation }) => {
             </View>
             <View style={styles.icon}>
               <TouchableOpacity
-                onPress={() => navigation.navigate("InterView")}
+              // onPress={() => navigation.navigate("InterView")}
               >
                 <Image source={Images.plus} />
               </TouchableOpacity>

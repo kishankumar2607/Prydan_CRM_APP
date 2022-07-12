@@ -215,10 +215,15 @@ const SetPassword: FC = ({ route, navigation }) => {
               <View style={styles.inputContainer}>
                 <TextInput
                   style={styles.inputField}
+                  // value={newPassword}
                   placeholder={I18n.t("setPassword.newPasswordPlaceholder")}
                   placeholderTextColor={colors.gray}
                   secureTextEntry={newPasswordVisibility}
+                  // onChangeText={(newPassword) => {
+                  //   setNewPassword(newPassword);
+                  // }}
                   onChangeText={(newPassword) => {
+                    setNewPassword(newPassword);
                     secureText(newPassword);
                   }}
                 />
@@ -231,15 +236,17 @@ const SetPassword: FC = ({ route, navigation }) => {
               <View style={styles.inputContainer1}>
                 <TextInput
                   style={styles.inputField}
+                  value={confirmPassword}
                   placeholder={I18n.t("setPassword.confirmPasswordPlaceholder")}
                   placeholderTextColor={colors.gray}
                   secureTextEntry={confirmPasswordVisibility}
                   onChangeText={(confirmPassword) => {
-                    secureText1(confirmPassword);
+                    setConfirmPassword(confirmPassword);
+                    secureText(confirmPassword);
                   }}
                 />
 
-                <Pressable onPress={handleNewPasswordVisibility}>
+                <Pressable onPress={handleConfirmPasswordVisibility}>
                   <Feather name={leftIcon} size={22} color={colors.black} />
                 </Pressable>
               </View>

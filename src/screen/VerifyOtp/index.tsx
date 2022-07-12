@@ -216,10 +216,10 @@ const VerifyOtp: FC = ({ route, navigation }) => {
               <Button
                 color={colors.white}
                 buttonText={I18n.t("buttonText.VerifyOtpButton")}
-                // onPress={() => verifyOTP()}
-                onPress={() =>
-                  navigation.navigate("SetPassword", { email: email })
-                }
+                onPress={() => verifyOTP()}
+                // onPress={() =>
+                //   navigation.navigate("SetPassword", { email: email })
+                // }
               />
             </View>
           </View>

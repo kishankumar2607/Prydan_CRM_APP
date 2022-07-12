@@ -5,7 +5,7 @@ import AuthNavigator from "./AuthNavigator";
 import { SplashScreen, WelcomeScreen } from "../screen";
 import { createStackNavigator } from "@react-navigation/stack";
 import { navigationRef } from "./NavigationService";
-import Tab1 from "./Tab";
+// import Tab1 from "./Tab";
 
 /**
  * Manage application navigation flow, This function is called when application loads.

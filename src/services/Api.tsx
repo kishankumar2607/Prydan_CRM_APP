@@ -158,7 +158,7 @@ export const Person = (
     const access_token = await getAccessToken();
     console.log(access_token);
     const formData = new FormData();
-    formData.append(" PersonType", PersonType  );
+    formData.append(" PersonType", PersonType);
     formData.append(" Name", Name);
     formData.append("Candidate_Source", Candidate_Source);
     formData.append("Vendor_Company", Vendor_Company + "");
@@ -176,8 +176,7 @@ export const Person = (
 
     const options = {
       headers: {
-        "Content-Type":
-          "multipart/form-data",
+        "Content-Type": "multipart/form-data",
         Authorization: access_token,
       },
     };
