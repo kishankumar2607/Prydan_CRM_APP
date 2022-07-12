@@ -2,9 +2,15 @@ import React, { FC } from "react";
 import { TextInput, StyleSheet } from "react-native";
 import { colors } from "../constants";
 import {
-  responsiveHeight,
-  responsiveFontSize,
+	responsiveHeight,
+	responsiveFontSize,
 } from "react-native-responsive-dimensions";
+import {
+	scale,
+	verticalScale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 /**
  * Renders a <TextInput /> component
  * @function TextInput Input component
@@ -15,46 +21,48 @@ import {
  */
 
 interface InputProps {
-  placeholder: string;
-  value: string;
-  onChangeText: () => void;
-  secureTextEntry?: boolean;
-  readOnly?: boolean;
+	placeholder: string;
+	value: string;
+	onChangeText: () => void;
+	secureTextEntry?: boolean;
+	readOnly?: boolean;
 }
 
 const Input: FC<InputProps> = ({
-  placeholder,
-  value,
-  onChangeText,
-  secureTextEntry,
-  readOnly,
+	placeholder,
+	value,
+	onChangeText,
+	secureTextEntry,
+	readOnly,
 }) => {
-  return (
-    <TextInput
-      placeholder={placeholder}
-      placeholderTextColor={colors.gray}
-      style={styles.inputContainer}
-      value={value}
-      onChangeText={onChangeText}
-      secureTextEntry={secureTextEntry}
-      autoCapitalize="none"
-      editable={!readOnly}
-    />
-  );
+	return (
+		<TextInput
+			placeholder={placeholder}
+			placeholderTextColor={colors.gray}
+			style={styles.inputContainer}
+			value={value}
+			onChangeText={onChangeText}
+			secureTextEntry={secureTextEntry}
+			autoCapitalize="none"
+			editable={!readOnly}
+		/>
+	);
 };
 
 export default Input;
 const styles = StyleSheet.create({
-  inputContainer: {
-    borderColor: colors.Amber,
-    height: responsiveHeight(6.5),
-    alignItems: "center",
-    justifyContent: "center",
-    marginVertical: 15,
-    borderRadius: 5,
-    borderWidth: 1,
-    paddingHorizontal: 10,
-    fontSize: responsiveFontSize(2),
-    color: colors.black,
-  },
+	inputContainer: {
+		flexDirection: "row",
+		alignItems: "center",
+		borderWidth: moderateScale(1),
+		borderColor: colors.Amber,
+		paddingHorizontal: moderateScale(18),
+		borderRadius: moderateScale(5),
+		marginVertical: moderateVerticalScale(10),
+		justifyContent: "center",
+		fontSize: scale(16),
+		color: colors.black,
+		fontFamily: "LeagueSpartan-Medium",
+		// backgroundColor: colors.blue,
+	},
 });

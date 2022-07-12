@@ -1,6 +1,12 @@
 import React, { FC } from "react";
 import { TextInput, StyleSheet } from "react-native";
 import { colors } from "../constants";
+import {
+	scale,
+	verticalScale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 
 /**
  * Renders a <SmallInput /> component
@@ -12,44 +18,45 @@ import { colors } from "../constants";
  */
 
 interface SmallInputProps {
-  placeholder: string;
-  value: string;
-  onChangeText: () => void;
-  secureTextEntry?: boolean;
-  readOnly?: boolean;
+	placeholder: string;
+	value: string;
+	onChangeText: () => void;
+	secureTextEntry?: boolean;
+	readOnly?: boolean;
 }
 
 const SmallInput: FC<SmallInputProps> = ({
-  placeholder,
-  value,
-  onChangeText,
-  secureTextEntry,
-  readOnly,
+	placeholder,
+	value,
+	onChangeText,
+	secureTextEntry,
+	readOnly,
 }) => {
-  return (
-    <TextInput
-      placeholder={placeholder}
-      placeholderTextColor={colors.gray}
-      style={styles.inputContainer}
-      value={value}
-      onChangeText={onChangeText}
-      secureTextEntry={secureTextEntry}
-      autoCapitalize="none"
-      editable={!readOnly}
-    />
-  );
+	return (
+		<TextInput
+			placeholder={placeholder}
+			placeholderTextColor={colors.gray}
+			style={styles.inputContainer}
+			value={value}
+			onChangeText={onChangeText}
+			secureTextEntry={secureTextEntry}
+			autoCapitalize="none"
+			editable={!readOnly}
+		/>
+	);
 };
 
 export default SmallInput;
 const styles = StyleSheet.create({
-  inputContainer: {
-    borderColor: colors.Amber,
-    width: 161,
-    height: 50,
-    borderRadius: 5,
-    borderWidth: 1,
-    paddingHorizontal: 10,
-    fontSize: 15,
-    color: colors.black,
-  },
+	inputContainer: {
+		borderColor: colors.Amber,
+		width: moderateScale(150),
+		height: moderateScale(50),
+		borderRadius: moderateScale(5),
+		borderWidth: moderateScale(1),
+		paddingHorizontal: moderateScale(16),
+		fontSize: scale(16),
+		color: colors.black,
+		fontFamily: "LeagueSpartan-Medium",
+	},
 });

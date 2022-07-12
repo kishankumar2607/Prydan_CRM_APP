@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
 import { colors } from "../constants";
 import {
-  responsiveHeight,
-  responsiveWidth,
-  responsiveFontSize,
+	responsiveHeight,
+	responsiveWidth,
+	responsiveFontSize,
 } from "react-native-responsive-dimensions";
 /**
  * Renders a <InterViewButton /> component
@@ -15,38 +15,39 @@ import {
  */
 
 interface InterViewButtonProps {
-  buttonText: string;
-  onPress?: () => void;
-  color: string;
+	buttonText: string;
+	onPress?: () => void;
+	color: string;
 }
 const InterViewButton: FC<InterViewButtonProps> = ({
-  buttonText,
-  onPress,
-  color,
+	buttonText,
+	onPress,
+	color,
 }) => {
-  return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
-      <Text style={[styles.text, { color: color }]}>{buttonText}</Text>
-    </TouchableOpacity>
-  );
+	return (
+		<TouchableOpacity onPress={onPress} style={styles.button}>
+			<Text style={[styles.text, { color: color }]}>{buttonText}</Text>
+		</TouchableOpacity>
+	);
 };
 export default InterViewButton;
 
 const styles = StyleSheet.create({
-  button: {
-    backgroundColor: colors.Amber,
-    width: responsiveWidth(38),
-    height: responsiveHeight(6),
-    alignItems: "center",
-    justifyContent: "center",
-    marginVertical: 25,
-    borderColor: colors.Peach,
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  text: {
-    fontSize: responsiveFontSize(2.2),
-    alignItems: "center",
-    justifyContent: "center",
-  },
+	button: {
+		backgroundColor: colors.Amber,
+		width: responsiveWidth(38),
+		height: responsiveHeight(6),
+		alignItems: "center",
+		justifyContent: "center",
+		marginVertical: 25,
+		borderColor: colors.Peach,
+		borderWidth: 1,
+		borderRadius: 5,
+	},
+	text: {
+		fontSize: responsiveFontSize(3.5),
+		alignItems: "center",
+		justifyContent: "center",
+		fontFamily: "LeagueSpartan-Medium",
+	},
 });

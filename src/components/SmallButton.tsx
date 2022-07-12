@@ -11,31 +11,32 @@ import { colors } from "../constants";
  */
 
 interface SmallButtonProps {
-  buttonText: string;
-  onPress?: () => void;
-  color: string;
+	buttonText: string;
+	onPress?: () => void;
+	color: string;
 }
 const SmallButton: FC<SmallButtonProps> = ({ buttonText, onPress, color }) => {
-  return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
-      <Text style={[styles.text, { color: color }]}>{buttonText}</Text>
-    </TouchableOpacity>
-  );
+	return (
+		<TouchableOpacity onPress={onPress} style={styles.button}>
+			<Text style={[styles.text, { color: color }]}>{buttonText}</Text>
+		</TouchableOpacity>
+	);
 };
 export default SmallButton;
 
 const styles = StyleSheet.create({
-  button: {
-    backgroundColor: colors.buttonBg,
-    width: 140,
-    height: 40,
-    alignItems: "center",
-    justifyContent: "center",
-    marginVertical: 25,
-  },
-  text: {
-    fontSize: 16,
-    alignItems: "center",
-    justifyContent: "center",
-  },
+	button: {
+		backgroundColor: colors.buttonBg,
+		width: 140,
+		height: 40,
+		alignItems: "center",
+		justifyContent: "center",
+		marginVertical: 25,
+	},
+	text: {
+		fontSize: 16,
+		alignItems: "center",
+		justifyContent: "center",
+		fontFamily: "LeagueSpartan-Medium",
+	},
 });

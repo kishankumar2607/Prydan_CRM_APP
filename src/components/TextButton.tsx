@@ -2,6 +2,12 @@ import React, { FC } from "react";
 import { Text, TouchableOpacity, StyleSheet, View } from "react-native";
 import { colors } from "../constants";
 import { responsiveFontSize } from "react-native-responsive-dimensions";
+import {
+	scale,
+	verticalScale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 /**
  * Renders a <TextButton /> component
  * @function Button TextButton component
@@ -10,22 +16,23 @@ import { responsiveFontSize } from "react-native-responsive-dimensions";
  */
 
 interface TextButtonProps {
-  text: string;
-  onPress?: () => void;
+	text: string;
+	onPress?: () => void;
 }
 const TextButton: FC<TextButtonProps> = ({ text, onPress }) => {
-  return (
-    <TouchableOpacity onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
-  );
+	return (
+		<TouchableOpacity onPress={onPress}>
+			<Text style={styles.text}>{text}</Text>
+		</TouchableOpacity>
+	);
 };
 
 const styles = StyleSheet.create({
-  text: {
-    color: colors.Blueberry,
-    fontSize: responsiveFontSize(2.1),
-  },
+	text: {
+		color: colors.Blueberry,
+		fontSize: scale(18),
+		fontFamily: "LeagueSpartan-Medium",
+	},
 });
 
 export default TextButton;
