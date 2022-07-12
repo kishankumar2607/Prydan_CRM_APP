@@ -19,12 +19,18 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		top: moderateScale(200),
 	},
-	text: {
-		color: colors.gray,
-		fontWeight: "700",
-		fontSize: scale(3),
-		opacity: moderateScale(0.7),
+	splashLogoContainer: {
+		height: moderateScale(120),
+		width: moderateScale(205),
+		// backgroundColor: colors.blue,
+		// flex: 1,
 	},
+	// text: {
+	// 	color: colors.gray,
+	// 	fontWeight: "700",
+	// 	fontSize: scale(3),
+	// 	opacity: moderateScale(0.7),
+	// },
 });
 
 export default styles;

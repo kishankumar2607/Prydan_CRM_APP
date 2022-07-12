@@ -38,6 +38,7 @@ export default StyleSheet.create({
 	BoxView: {
 		flexDirection: "row",
 		// backgroundColor: colors.blue,
+		// flex: 1,
 	},
 	menuView: {
 		// flex: 1,
@@ -112,8 +113,7 @@ export default StyleSheet.create({
 	},
 	icon: {
 		alignSelf: "flex-end",
-		// marginVertical: moderateVerticalScale(3),
-		// marginHorizontal: moderateScale(1),
+		marginTop: moderateScale(-20),
 		// flex: 1,
 		// backgroundColor: colors.blue,
 	},

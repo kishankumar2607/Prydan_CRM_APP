@@ -40,11 +40,12 @@ export default StyleSheet.create({
 		margin: moderateScale(30),
 	},
 	HeadingText: {
-		fontWeight: "bold",
+		// fontWeight: "bold",
 		color: colors.black,
 		fontSize: scale(24),
 		textAlign: "center",
 		marginVertical: moderateVerticalScale(15),
+		fontFamily: "LeagueSpartan-SemiBold",
 	},
 	inputContainer: {
 		flexDirection: "row",

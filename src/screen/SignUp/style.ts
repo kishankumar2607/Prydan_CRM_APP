@@ -38,11 +38,12 @@ export default StyleSheet.create({
 		flexDirection: "row",
 	},
 	HeadingText: {
-		fontWeight: "bold",
+		// fontWeight: "bold",
 		color: colors.black,
-		fontSize: scale(16),
+		fontSize: scale(24),
 		marginVertical: moderateVerticalScale(25),
 		textAlign: "center",
+		fontFamily: "LeagueSpartan-SemiBold",
 	},
 	optionsView: {
 		flexDirection: "row",
