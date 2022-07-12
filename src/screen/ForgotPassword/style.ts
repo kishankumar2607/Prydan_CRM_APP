@@ -6,7 +6,6 @@ import {
 	moderateScale,
 	moderateVerticalScale,
 } from "react-native-size-matters";
-import { responsiveFontSize } from "react-native-responsive-dimensions";
 
 export default StyleSheet.create({
 	safeView: {
@@ -35,19 +34,22 @@ export default StyleSheet.create({
 		fontWeight: "700",
 		color: colors.black,
 		textAlign: "center",
+		fontFamily: "LeagueSpartan-Medium",
 		// backgroundColor: colors.blue,
 	},
 	smallText: {
-		fontSize: scale(14),
+		fontSize: scale(16),
 		marginVertical: moderateVerticalScale(20),
 		color: colors.gray,
 		letterSpacing: scale(0.8),
+		fontFamily: "LeagueSpartan-Medium",
 	},
 	backText: {
 		color: colors.gray,
 		marginVertical: moderateVerticalScale(50),
-		fontSize: responsiveFontSize(1.9),
+		fontSize: scale(16),
 		textAlign: "center",
+		fontFamily: "LeagueSpartan-Medium",
 		// flex: 0.2,
 	},
 	imageView: {
@@ -64,20 +66,22 @@ export default StyleSheet.create({
 		// flex: 1,
 	},
 	text: {
-		fontSize: scale(14),
+		fontSize: scale(16),
 		color: colors.gray,
 		fontWeight: "400",
+		fontFamily: "LeagueSpartan-Medium",
 	},
 	textView: {
 		// marginVertical: moderateVerticalScale(10),
 	},
 	link: {
 		color: colors.Amber,
-		fontSize: scale(13),
+		fontSize: scale(16),
 		letterSpacing: scale(0.2),
 		alignContent: "center",
 		textAlign: "center",
 		top: scale(90),
+		fontFamily: "LeagueSpartan-Medium",
 	},
 	iconView: {
 		// marginVertical: 10,

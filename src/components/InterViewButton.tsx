@@ -6,6 +6,12 @@ import {
 	responsiveWidth,
 	responsiveFontSize,
 } from "react-native-responsive-dimensions";
+import {
+	scale,
+	verticalScale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 /**
  * Renders a <InterViewButton /> component
  * @function InterViewButton component
@@ -35,17 +41,17 @@ export default InterViewButton;
 const styles = StyleSheet.create({
 	button: {
 		backgroundColor: colors.Amber,
-		width: responsiveWidth(38),
-		height: responsiveHeight(6),
+		width: moderateScale(154),
+		height: moderateScale(57),
 		alignItems: "center",
 		justifyContent: "center",
-		marginVertical: 25,
+		marginVertical: moderateVerticalScale(25),
 		borderColor: colors.Peach,
-		borderWidth: 1,
-		borderRadius: 5,
+		borderWidth: moderateScale(1),
+		borderRadius: moderateScale(5),
 	},
 	text: {
-		fontSize: responsiveFontSize(3.5),
+		fontSize: scale(18),
 		alignItems: "center",
 		justifyContent: "center",
 		fontFamily: "LeagueSpartan-Medium",
