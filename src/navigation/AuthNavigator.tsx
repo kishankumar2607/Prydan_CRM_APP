@@ -30,7 +30,7 @@ const AuthNavigator = () => (
 		<Stack.Screen name="Google" component={Google} />
 		<Stack.Screen name="ForgotFinal" component={ForgotFinal} />
 		<Stack.Screen name="SplashScreen" component={SplashScreen} />
-		<Stack.Screen name="Today" component={Today} />
+		{/* <Stack.Screen name="Today" component={Today} /> */}
 	</Stack.Navigator>
 );
 
