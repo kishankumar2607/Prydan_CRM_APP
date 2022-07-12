@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
 	// 	fontSize: scale(1),
 	// },
 	introImageStyle: {
-		height: moderateScale(80),
-		width: moderateScale(144),
+		height: moderateScale(90),
+		width: moderateScale(145),
 	},
 	introTextStyle: {
 		fontSize: scale(13),

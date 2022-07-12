@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.crm_mobile">
+  package="com.prydancrm">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
