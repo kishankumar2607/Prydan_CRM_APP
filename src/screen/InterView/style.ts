@@ -1,5 +1,8 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
+import {
+	scale,
+} from "react-native-size-matters";
 
 export default StyleSheet.create({
   container: {
@@ -25,36 +28,79 @@ export default StyleSheet.create({
   headerTextDash: {
     color: colors.black,
     fontSize: 25,
+    flex: 0.5,
   },
   headerTextButton: {
     color: colors.green,
     fontSize: 20,
   },
   inputView: {
-    borderColor: colors.silverChalice,
+    borderColor: colors.Amber,
     width: "90%",
-    height: 60,
-    marginVertical: 20,
+    marginVertical: 10,
     paddingHorizontal: 10,
     borderWidth: 1,
     color: colors.black,
-  },
-  titleViewText: {
-    flex: 0.5,
+    borderRadius:5,
+    },
+
+    titleViewText: {
+      flex: 0.2,
+    borderRadius:5,
     alignItems: "center",
   },
+  inputView1: {
+  width: "95%",
+  paddingHorizontal: 10,
+   color: colors.black,  },
+  
   placeholderStyle: {
-    fontSize: 15,
+    fontSize: scale(14),
     color: colors.gray,
-    paddingVertical: 52,
-    paddingHorizontal: 5,
   },
   dateView: {
-    borderColor: colors.silverChalice,
+    borderColor: colors.Amber,
     width: "90%",
-    height: 60,
-    marginVertical: 20,
-    paddingHorizontal: 10,
+    height: 50,
+    marginVertical: 10,
+    paddingHorizontal: 15,
     borderWidth: 1,
+    borderRadius:5,
   },
+  selectedTextStyle: {
+    fontSize: 16,
+  },
+
+
+  // -----------
+
+  dropdown: {
+ margin:7,
+    height: 35,
+    
+    // borderBottomColor: 'gray',
+    // borderBottomWidth: 0.5,
+  },
+  icon: {
+    marginRight: 5,
+  },
+  // placeholderStyle: {
+  //   fontSize: 16,
+  // },
+  
+  iconStyle: {
+    width: 20,
+    height: 20,
+  },
+  inputSearchStyle: {
+    height: 40,
+    fontSize: 16,
+  },
+
+  datePickerStyle: {
+    width: 200,
+    marginTop: 20,
+  },
+ 
+  
 });

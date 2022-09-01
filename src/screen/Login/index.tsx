@@ -34,8 +34,9 @@ const Login: FC = ({ navigation }) => {
    * @description password {string} - Password for login user.
    */
 
-	const [email, setEmail] = useState("bhavinasodariya2911@gmail.com");
-	const [password, setPassword] = useState("12345678aA@");
+	const [email, setEmail] = useState('bhavin.prydan@gmail.com');
+	const [password, setPassword] = useState('29112000');
+
 	const [spinner, setSpinner] = useState(false);
 	const regex =
 		/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -69,7 +70,7 @@ const Login: FC = ({ navigation }) => {
 						"UserDetails",
 						JSON.stringify(loginResponse?.data),
 					);
-					navigation.navigate("AppNavigator");
+					// navigation.navigate("AppNavigator");
 					setEmail("");
 					setPassword("");
 					// Alert.alert("Success", loginResponse.data.message);

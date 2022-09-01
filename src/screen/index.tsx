@@ -16,3 +16,5 @@ export { default as CreateCandidate } from "./CreateCandidate";
 export { default as CreateVendor } from "./CreateVendor";
 export { default as CreateClient } from "./CreateClient";
 export { default as Candidate } from "./Candidate";
+export { default as Person } from "./Person";
+export { default as Company } from "./Company";

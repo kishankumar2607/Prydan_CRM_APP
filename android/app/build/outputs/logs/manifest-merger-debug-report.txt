@@ -22,7 +22,6 @@ MERGED from [:react-native-webview] G:\NEW CRM APP\Prydan_CRM_APP\node_modules\r
 MERGED from [com.facebook.react:react-native:0.67.4] C:\Users\kisha\.gradle\caches\transforms-3\221c71d43dbd5b88bd9ef5161912c98c\transformed\jetified-react-native-0.67.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kisha\.gradle\caches\transforms-3\2440439db2f6d9d5f76a90648980e461\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\kisha\.gradle\caches\transforms-3\b825e962adf445255b97861e91a2a884\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] G:\NEW CRM APP\Prydan_CRM_APP\node_modules\react-native-reanimated\android\build\.transforms\ca78137af5b8350db8b08f1b36b4a8c9\transformed\jetified-react-native-reanimated-67-jsc\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:flipper:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\705daa35cfc508d545884e16a9ae76fc\transformed\jetified-flipper-2.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\3c07b8fb53743fa14ab68cadfbfb8166\transformed\jetified-stetho-2.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\6621840f9eac2a68a453a820def102cd\transformed\jetified-fresco-2.5.0\AndroidManifest.xml:2:1-9:12
@@ -227,8 +226,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kish
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kisha\.gradle\caches\transforms-3\2440439db2f6d9d5f76a90648980e461\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\kisha\.gradle\caches\transforms-3\b825e962adf445255b97861e91a2a884\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\kisha\.gradle\caches\transforms-3\b825e962adf445255b97861e91a2a884\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] G:\NEW CRM APP\Prydan_CRM_APP\node_modules\react-native-reanimated\android\build\.transforms\ca78137af5b8350db8b08f1b36b4a8c9\transformed\jetified-react-native-reanimated-67-jsc\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] G:\NEW CRM APP\Prydan_CRM_APP\node_modules\react-native-reanimated\android\build\.transforms\ca78137af5b8350db8b08f1b36b4a8c9\transformed\jetified-react-native-reanimated-67-jsc\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\705daa35cfc508d545884e16a9ae76fc\transformed\jetified-flipper-2.5.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\705daa35cfc508d545884e16a9ae76fc\transformed\jetified-flipper-2.5.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.5.0] C:\Users\kisha\.gradle\caches\transforms-3\3c07b8fb53743fa14ab68cadfbfb8166\transformed\jetified-stetho-2.5.0\AndroidManifest.xml:5:5-7:41

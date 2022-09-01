@@ -90,7 +90,7 @@ const Candidate: FC = ({ navigation }) => {
               <Text style={styles.headerTextDash}>Candidate</Text>
             </View>
           </View>
-          <Searchbar
+           <Searchbar
             placeholder="Search Person Here"
             onChangeText={setSearchContact}
             value={searchContact}
@@ -99,19 +99,19 @@ const Candidate: FC = ({ navigation }) => {
             onPress={() => onPersonSearchSubmit()}
           />
 
-          <ScrollableTabView
+          {/* <ScrollableTabView
             tabBarActiveTextColor="black"
             renderTabBar={() => <TabBar underlineColor="#53ac49" />}
-          >
+          > */}
             <Page tabLabel={{ label: "Candidate" }} label="Company" />
-          </ScrollableTabView>
-          <View
-            style={{
+          {/* </ScrollableTabView> */}
+           <View
+           style={{
               flexDirection: "row",
-              backgroundColor: colors.GhostWhite,
-              marginVertical: 20,
+               backgroundColor: colors.GhostWhite,
+             marginVertical: 20,
             }}
-          >
+         > 
             <Dropdown
               style={styles.dropdown}
               placeholderStyle={styles.placeholderStyle}
@@ -152,7 +152,7 @@ const Candidate: FC = ({ navigation }) => {
                 setIsFocus(false);
               }}
             />
-          </View>
+          </View> 
         </View>
       </ScrollView>
     </SafeAreaView>

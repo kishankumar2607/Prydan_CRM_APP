@@ -2,10 +2,6 @@ import React, { FC } from "react";
 import { TextInput, StyleSheet } from "react-native";
 import { colors } from "../constants";
 import {
-	responsiveHeight,
-	responsiveFontSize,
-} from "react-native-responsive-dimensions";
-import {
 	scale,
 	verticalScale,
 	moderateScale,
@@ -56,7 +52,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		borderWidth: moderateScale(1),
 		borderColor: colors.Amber,
-		paddingHorizontal: moderateScale(18),
+		paddingHorizontal: moderateScale(15),
 		borderRadius: moderateScale(5),
 		marginVertical: moderateVerticalScale(10),
 		justifyContent: "center",

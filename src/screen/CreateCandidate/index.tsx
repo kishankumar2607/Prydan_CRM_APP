@@ -2,20 +2,19 @@ import React, { FC, useEffect, useState } from "react";
 import {
   View,
   ScrollView,
-  SafeAreaView,
   Text,
   TouchableOpacity,
   Alert,
-  TextInput
+  TextInput,
+  SafeAreaView,
+  StatusBar,
 
 } from "react-native";
-import { Input, Button } from "../../components";
+import { Input, Button, Spinner } from "../../components";
 import styles from "./style";
 import { colors, I18n } from "../../constants";
 import { useDispatch, useSelector } from "react-redux";
 import { Dropdown } from "react-native-element-dropdown";
-import RadioForm from "react-native-simple-radio-button";
-
 import {
   requestPerson,
   onPersonResponse,
@@ -24,10 +23,10 @@ import {
   requestStatic,
   onStaticResponse,
 } from "../../redux/actions/staticAction";
-
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import NetInfo from "@react-native-community/netinfo";
 import style from "./style";
+import RadioForm from "react-native-simple-radio-button";
 
 /**
  * @class  CreateCandidate
@@ -35,12 +34,13 @@ import style from "./style";
  * @description User enter email ID and click on reset password button, in that time Help is On The Way message popup if user want to go back to login screen click on back to home link
  */
 const CreateCandidate: FC = ({ navigation }) => {
+  const [candidateSource, setCandidateSource] = useState(null);
+  const [isFocusCandidateSource, setFocusCandidateSource] = useState(false);
+  const [vendor, setVendor] = useState(null);
+  const [isFocusVendor, setIsFocusVendor] = useState(false);
   const [PersonType, setPersonType] = useState<string>("");
   const [isFocusPerson, setFocusPerson] = useState(false);
   const [name, setName] = useState("");
-  const [candidateSource, setCandidateSource] = useState<string>(null);
-  const [vendorValue, setVendorValue] = useState<number>(null);
-  const [isFocusVendor, setIsFocusVendor] = useState(false);
   const [salary, setSalary] = useState(0);
   const [experience, setExperience] = useState<string>("");
   const [phoneNo, setPhoneNo] = useState<number>("");
@@ -49,19 +49,15 @@ const CreateCandidate: FC = ({ navigation }) => {
   const [emailTypeValue, setEmailTypeValue] = useState<number>(null);
   const [isFocusEmailType, setIsFocusEmailType] = useState(false);
   const [emailAddress, setEmailAddress] = useState<number>("");
-  const [skillValue, setSkillValue] = useState('');
-  const [isFocusSkill, setIsFocusSkill] = useState(0);
+  const [skill, setSkill] = useState(null);
+  const [isFocusSkill, setIsFocusSkill] = useState(false);
   const [photo, setPhoto] = useState(false);
+  const [resume, setResume] = useState(false);
   const [photoTypeValue, setPhotoTypeValue] = useState(0);
   const [isFocusPhotoType, setIsFocusPhotoType] = useState(0);
   const [document, setDocument] = useState("");
-  const [isCandidateSelected, setCandidateSelection] = useState(false);
-  const [isVendorSelected, setVendorSelection] = useState(false);
-  const [isClientSelected, setClientSelection] = useState(false);
   const [spinner, setSpinner] = useState(false);
   const [chosenOption, setChosenOption] = useState([]); 
- const [value, setValue] = useState(null);
- const [isFocus, setIsFocus] = useState(false);
 
   const options = [
     { label: "Candidate", Value: "1" },
@@ -236,9 +232,15 @@ useEffect(() => {
 
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View style={styles.BoxContainer}>
+    <ScrollView>
+    <SafeAreaView style={styles.safeView}>
+    <StatusBar />
+    {/* {spinner ? (
+      <Spinner color={colors.blue} />
+    ) : ( */}
+      <View style={styles.container}>
+        <View style={styles.topView}>
+        <View>
          
           <RadioForm
             radio_props={options}
@@ -252,182 +254,141 @@ useEffect(() => {
             formHorizontal={true}
             style={styles.radioButton}
           />
-         
-
           <View style={styles.inputView}>
             <Dropdown
+             style={styles.dropdown}
               placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              inputSearchStyle={styles.inputSearchStyle}
+              iconStyle={styles.iconStyle}
               data={[
-                { label: "Candidate", vendorValue: "1" },
-                { label: "Vendor", vendorValue: "2" },
-                { label: "Client", vendorValue: "3" },
+                { label: "Candidate", candidateSource: "1" },
+                { label: "Vendor", candidateSource: "2" },
+                { label: "Client", candidateSource: "3" },
               ]}
-              labelField="label"
-              valueField="PersonType"
-              placeholder={"Person Type"}
-              value={PersonType}
+              labelField={"label"}
+              valueField={"candidateSource"}
+              placeholder="Candidate Source"
+              value={candidateSource}
+              onFocus={() => setFocusCandidateSource(true)}
+              onBlur={() => setFocusCandidateSource(false)}
               onChange={(item) => {
-                setPersonType(item.PersonType);
-                setFocusPerson(false);
+                setCandidateSource(item.candidateSource);
+                setFocusCandidateSource(false);
               }}
             />
           </View>
           <View style={styles.inputView}>
-            <Input
-              placeholder={"Name"}
-              secureTextEntry={undefined}
-              value={name}
-              onChangeText={setName}
+            <Dropdown
+             style={styles.dropdown}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              inputSearchStyle={styles.inputSearchStyle}
+              iconStyle={styles.iconStyle}
+              data={[
+                { label: "Candate", vendor: "1" },
+                { label: "ndor", vendor: "2" },
+                { label: "Cient", vendor: "3" },
+              ]}
+              labelField="label"
+              valueField="vendor"
+              placeholder="Name Of Vendor Company"
+              value={vendor}
+              onFocus={() => setIsFocusVendor(true)}
+              onBlur={() => setIsFocusVendor(false)}
+              onChange={(item) => {
+                setVendor(item.vendor);
+                setIsFocusVendor(false);
+              }}
             />
           </View>
+
           <View style={styles.inputView}>
+            <Dropdown
+             style={styles.dropdown}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              inputSearchStyle={styles.inputSearchStyle}
+              iconStyle={styles.iconStyle}
+              data={[
+                { label: "andate", skill: "1" },
+                { label: "ndr", skill: "2" },
+               
+              ]}
+              labelField="label"
+              valueField="skill"
+              placeholder="Skill"
+              value={skill}
+              onChange={(item) => {
+                setSkill(item.skill);
+                setIsFocusSkill(false);
+              }}
+            />
+          </View>
+          <View style={styles.inputView1}>
             <Input
-              placeholder={"Candidate Source"}
-              onChangeText={setCandidateSource}
-              value={candidateSource}
+              placeholder={"Name"}
+              onChangeText={setName}
+              value={name}
               secureTextEntry={undefined}
               color={colors.black}
             />
           </View>
-          {/* <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Candidate", vendorValue: "1" },
-                { label: "Vendor", vendorValue: "2" },
-                { label: "Client", vendorValue: "3" },
-              ]}
-              labelField="label"
-              valueField="vendorValue"
-              placeholder={"Vendor Company"}
-              value={vendorValue}
-              onChange={(item) => {
-                setVendorValue(item.vendorValue);
-                setIsFocusVendor(false);
-              }}
-            />
-          </View> */}
-          {/* <View style={styles.inputView}>
+          <View style={styles.inputView1}>
+          <Button
+            color={colors.white}
+            buttonText="Upload Resume"
+            onPress={setResume}
+            bgColor={undefined}
+          />
+          </View>
+          <View style={styles.inputView1}>
             <Input
-              placeholder={"Salary"}
+              placeholder={"Contact Number"}
+              onChangeText={setPhoneNo}
+              value={phoneNo}
+              secureTextEntry={undefined}
+              color={colors.black}
+            />
+          </View>
+          <View style={styles.inputView1}>
+            <Input
+              placeholder={"Email"}
+              onChangeText={setEmailAddress}
+              value={emailAddress}
+              secureTextEntry={undefined}
+            />
+          </View>
+          <View style={styles.inputView1}>
+          <Button
+            color={colors.white}
+            buttonText="Upload Photo"
+            onPress={setPhoto}
+            bgColor={undefined}
+          />
+          </View>
+          <View style={styles.inputView1}>
+            <Input
+              placeholder={"Cost/Salary"}
               onChangeText={setSalary}
               value={salary}
               secureTextEntry={undefined}
             />
           </View>
-          <View style={styles.inputView}>
+          <View style={styles.inputView1}>
             <Input
               placeholder={"Experience"}
               onChangeText={setExperience}
               value={experience}
               secureTextEntry={undefined}
             />
-          </View> */}
-          {/* <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Personal", phoneTypeValue: "1" },
-                { label: "Home", phoneTypeValue: "2" },
-              ]}
-              labelField="label"
-              valueField="phoneTypeValue"
-              placeholder={"PhoneType"}
-              value={phoneTypeValue}
-              onChange={(item) => {
-                setPhoneTypeValue(item.phoneTypeValue);
-                setIsFocusPhoneType(false);
-              }}
-            />
-          </View> */}
-          {/* <View style={styles.inputView}>
-            <Input
-              placeholder={"PhoneNo"}
-              onChangeText={setPhoneNo}
-              value={phoneNo}
-              secureTextEntry={undefined}
-            />
           </View>
-          <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Personal", emailTypeValue: "1" },
-                { label: "Company", emailTypeValue: "2" },
-              ]}
-              labelField="label"
-              valueField="emailTypeValue"
-              placeholder={"Email Type"}
-              value={emailTypeValue}
-              onChange={(item) => {
-                setEmailTypeValue(item.emailTypeValue);
-                setIsFocusEmailType(false);
-              }}
-            />
-          </View> */}
-          {/* <View style={styles.inputView}>
-            <Input
-              placeholder={"Email Address"}
-              onChangeText={setEmailAddress}
-              value={emailAddress}
-              secureTextEntry={undefined}
-            />
-          </View> */}
-          {/* <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "React Native", skillValue: "1" },
-                { label: "React Js", skillValue: "2" },
-                { label: "Python", skillValue: "3" },
-                { label: "Php", skillValue: "4" },
-                { label: "Flutter", skillValue: "5" },
-              ]}
-              labelField="label"
-              valueField="skillValue"
-              placeholder={"Skill"}
-              value={skillValue}
-              onChange={(item) => {
-                setSkillValue(item.skillValue);
-                setIsFocusSkill(false);
-              }}
-            />
-          </View> */}
-          {/* <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[{ label: "Personal", photoTypeValue: "1" }]}
-              labelField="label"
-              valueField="photoTypeValue"
-              placeholder={"PhotoType"}
-              value={photoTypeValue}
-              onChange={(item) => {
-                setPhotoTypeValue(item.photoTypeValue);
-                setIsFocusPhotoType(false);
-              }}
-            />
-          </View>
-          <Button
-            color={colors.black}
-            buttonText="Upload Photo"
-            onPress={setPhoto}
-            bgColor={undefined}
-          />
-          <Button
-            color={colors.black}
-            buttonText="Upload PDF"
-            onPress={setDocument}
-            bgColor={undefined}
-          /> */}
-          <Button
-            color={colors.black}
-            buttonText="Submit"
-            onPress={() => onPersonSubmit()}
-            bgColor={undefined}
-          />
         </View>
-      </ScrollView>
-    </SafeAreaView>
+        </View>
+				</View>
+			{/* )} */}
+		</SafeAreaView>
+    </ScrollView>
   );
 };
 export default CreateCandidate;

@@ -1,14 +1,7 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
 import {
-	responsiveHeight,
-	responsiveWidth,
-	responsiveFontSize,
-} from "react-native-responsive-dimensions";
-
-import {
 	scale,
-	verticalScale,
 	moderateScale,
 	moderateVerticalScale,
 } from "react-native-size-matters";

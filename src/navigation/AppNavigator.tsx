@@ -28,50 +28,53 @@ const TodayStackNavigator = ({ navigation, route }) => {
 				headerShown: false,
 			}}
 		>
-			<TodayNavigator.Screen name="Today" component={Today} />
-			<TodayNavigator.Screen name="InterView" component={InterView} />
+				<TodayNavigator.Screen name="Today" component={Today} />
+				<TodayNavigator.Screen name="InterView" component={InterView} />
+				<TodayNavigator.Screen name="CreateClient" component={CreateClient} />
+				
 		</TodayNavigator.Navigator>
 	);
 };
 
-// const CandidateNavigator = createStackNavigator();
+const CandidateNavigator = createStackNavigator();
 
-// const CandidateStackNavigator = ({ navigation, route }) => {
-// 	return (
-// 		<CandidateNavigator.Navigator
-// 			screenOptions={{
-// 				headerShown: false,
-// 			}}
-// 		>
-// 			<CandidateNavigator.Screen
-// 				name="CreateCandidate"
-// 				component={CreateCandidate}
-// 			/>
-// 			<CandidateNavigator.Screen
-// 				name="CreateVendor"
-// 				component={CreateVendor}
-// 			/>
-// 			<CandidateNavigator.Screen
-// 				name="CreateClient"
-// 				component={CreateClient}
-// 			/>
-// 		</CandidateNavigator.Navigator>
-// 	);
-// };
+const CandidateStackNavigator = ({ navigation, route }) => {
+	return (
+		<CandidateNavigator.Navigator
+			screenOptions={{
+				headerShown: false,
+			}}
+		>
+			<CandidateNavigator.Screen
+				name="CreateCandidate"
+				component={CreateCandidate}
+			/>
+			<CandidateNavigator.Screen
+				name="CreateVendor"
+				component={CreateVendor}
+			/>
+			<CandidateNavigator.Screen
+				name="CreateClient"
+				component={CreateClient}
+			/>
+		</CandidateNavigator.Navigator>
+	);
+};
 
-// const ContactNavigator = createStackNavigator();
+const ContactNavigator = createStackNavigator();
 
-// const ContactStackNavigator = ({ navigation, route }) => {
-// 	return (
-// 		<ContactNavigator.Navigator
-// 			screenOptions={{
-// 				headerShown: false,
-// 			}}
-// 		>
-// 			<ContactNavigator.Screen name="Candidate" component={Candidate} />
-// 		</ContactNavigator.Navigator>
-// 	);
-// };
+const ContactStackNavigator = ({ navigation, route }) => {
+	return (
+		<ContactNavigator.Navigator
+		initialRouteName="Contact"
+			screenOptions={{
+				headerShown: false,
+			}}
+		>
+			<ContactNavigator.Screen name="Contact" component={Contact} />
+		</ContactNavigator.Navigator>
+	);
+};
 
 /**
  * Manage application authentication navigation
@@ -129,9 +132,9 @@ const AppNavigator = () => (
 			}}
 		/>
 
-		{/* <Tab.Screen
+		<Tab.Screen
 			name="Contact"
-			component={Contact}
+			component={ContactStackNavigator}
 			options={{
 				tabBarIcon: ({ focused }) => (
 					<>
@@ -151,8 +154,8 @@ const AppNavigator = () => (
 					</>
 				),
 			}}
-		/> */}
-		{/* <Tab.Screen
+		/>
+		<Tab.Screen
 			name="Application"
 			component={ContactStackNavigator}
 			options={{
@@ -175,8 +178,8 @@ const AppNavigator = () => (
 					</>
 				),
 			}}
-		/> */}
-		{/* <Tab.Screen
+		/>
+		<Tab.Screen
 			name="Position"
 			component={CandidateStackNavigator}
 			options={{
@@ -199,7 +202,9 @@ const AppNavigator = () => (
 					</>
 				),
 			}}
-		/> */}
+
+
+		/>
 		<Tab.Screen
 			name="More"
 			component={Login}

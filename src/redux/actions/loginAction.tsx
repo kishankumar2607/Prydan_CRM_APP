@@ -10,7 +10,7 @@ interface RequestAction {
   payload: LoginModel;
 }
 
-interface ResponseAction {
+interface onLoginResponse {
   response: any;
   readonly type: "LOGIN_RESPONSE";
 }

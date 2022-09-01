@@ -55,6 +55,25 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 28,
   },
+
+
+  tabStyle: {},
+  scrollStyle: {
+    backgroundColor: 'white',
+    paddingLeft: 65,
+    paddingRight: 65,
+    // justifyContent: 'center',
+  },
+  tabBarTextStyle: {
+    fontSize: 14,
+    fontWeight: 'normal',
+  },
+  underlineStyle: {
+    height: 3,
+    backgroundColor: 'red',
+    borderRadius: 3,
+    width: 15,
+  },
 });
 
 export default styles;

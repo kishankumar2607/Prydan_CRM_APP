@@ -5,13 +5,14 @@ import {
   SafeAreaView,
   Text,
   TouchableOpacity,
+  StatusBar,
 } from "react-native";
 import { Input, Button } from "../../components";
 import styles from "./style";
 import { colors, I18n } from "../../constants";
 import { Dropdown } from "react-native-element-dropdown";
-import CheckBox from "@react-native-community/checkbox";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import RadioForm from "react-native-simple-radio-button";
 
 /**
  * @class  CreateCandidate
@@ -19,185 +20,118 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
  * @description User enter email ID and click on reset password button, in that time Help is On The Way message popup if user want to go back to login screen click on back to home link
  */
 const CreateClient: FC = ({ navigation }) => {
-  const [personValue, setPersonValue] = useState(null);
-  const [isFocusPerson, setFocusPerson] = useState(false);
+  const [vendor, setVendor] = useState(null);
+  const [isFocusVendor, setIsFocusVendor] = useState(false);
   const [name, setName] = useState("");
-  const [clientValue, setClientValue] = useState(null);
-  const [isFocusClient, setIsFocusClient] = useState(false);
-  const [phoneNo, setPhoneNo] = useState("");
-  const [phoneTypeValue, setPhoneTypeValue] = useState(null);
-  const [isFocusPhoneType, setIsFocusPhoneType] = useState(false);
-  const [emailTypeValue, setEmailTypeValue] = useState(null);
-  const [isFocusEmailType, setIsFocusEmailType] = useState(false);
-  const [emailAddress, setEmailAddress] = useState("");
-  const [photo, setPhoto] = useState("");
-  const [photoTypeValue, setPhotoTypeValue] = useState(null);
-  const [isFocusPhotoType, setIsFocusPhotoType] = useState(false);
   const [requirement, setRequirement] = useState("");
-  const [isCandidateSelected, setCandidateSelection] = useState(false);
-  const [isVendorSelected, setVendorSelection] = useState(false);
-  const [isClientSelected, setClientSelection] = useState(false);
+  const [phoneNo, setPhoneNo] = useState<number>("");
+  const [emailAddress, setEmailAddress] = useState<number>("");
+  const [photo, setPhoto] = useState(false);
+  const [spinner, setSpinner] = useState(false);
+  const [chosenOption, setChosenOption] = useState([]); 
 
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View style={styles.BoxContainer}>
-          <View style={{ flexDirection: "row" }}>
-            <View style={{ flexDirection: "row" }}>
-              <CheckBox
-                value={isCandidateSelected}
-                onValueChange={setCandidateSelection}
-              />
-              <Text style={{ marginVertical: 5, marginHorizontal: 10 }}>
-                Candidate
-              </Text>
-            </View>
-
-            <View style={{ flexDirection: "row", marginHorizontal: 20 }}>
-              <CheckBox
-                value={isVendorSelected}
-                onValueChange={setVendorSelection}
-              />
-              <Text style={{ marginVertical: 5, marginHorizontal: 10 }}>
-                Vendor
-              </Text>
-            </View>
-
-            <View style={{ flexDirection: "row" }}>
-              <CheckBox
-                value={isClientSelected}
-                onValueChange={setClientSelection}
-              />
-              <Text style={{ marginVertical: 5, marginHorizontal: 10 }}>
-                Client
-              </Text>
-            </View>
-          </View>
-          <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Candidate", personValue: "1" },
-                { label: "Vendor", personValue: "2" },
-                { label: "Client", personValue: "3" },
-              ]}
-              labelField="label"
-              valueField="personValue"
-              placeholder={"Person Type"}
-              value={personValue}
-              onChange={(item) => {
-                setPersonValue(item.personValue);
-                setFocusPerson(false);
-              }}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Input
-              placeholder={"Name"}
-              secureTextEntry={undefined}
-              value={name}
-              onChangeText={setName}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Candidate", clientValue: "1" },
-                { label: "Vendor", clientValue: "2" },
-                { label: "Client", clientValue: "3" },
-              ]}
-              labelField="label"
-              valueField="clientValue"
-              placeholder={"Client Company"}
-              value={clientValue}
-              onChange={(item) => {
-                setClientValue(item.clientValue);
-                setIsFocusClient(false);
-              }}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Personal", phoneTypeValue: "1" },
-                { label: "Home", phoneTypeValue: "2" },
-              ]}
-              labelField="label"
-              valueField="phoneTypeValue"
-              placeholder={"PhoneType"}
-              value={phoneTypeValue}
-              onChange={(item) => {
-                setPhoneTypeValue(item.phoneTypeValue);
-                setIsFocusPhoneType(false);
-              }}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Input
-              placeholder={"PhoneNo"}
-              onChangeText={setPhoneNo}
-              value={phoneNo}
-              secureTextEntry={undefined}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Dropdown
-              placeholderStyle={styles.placeholderStyle}
-              data={[
-                { label: "Personal", emailTypeValue: "1" },
-                { label: "Company", emailTypeValue: "2" },
-              ]}
-              labelField="label"
-              valueField="emailTypeValue"
-              placeholder={"Email Type"}
-              value={emailTypeValue}
-              onChange={(item) => {
-                setEmailTypeValue(item.emailTypeValue);
-                setIsFocusEmailType(false);
-              }}
-            />
-          </View>
-          <View style={styles.inputView}>
-            <Input
-              placeholder={"Email Address"}
-              onChangeText={setEmailAddress}
-              value={emailAddress}
-              secureTextEntry={undefined}
-            />
-          </View>
-          <Button
-            color={colors.black}
-            buttonText="Upload Photo"
-            onPress={setPhoto}
-            bgColor={undefined}
+  const options = [
+    { label: "Candidate", Value: "1" },
+    { label: "Vendor", Value: "2" },
+    { label: "Client", Value: "3" },
+  ]; 
+ return (
+    // <ScrollView>
+    <SafeAreaView style={styles.safeView}>
+    <StatusBar />
+    {/* {spinner ? (
+      <Spinner color={colors.blue} />
+    ) : ( */}
+      <View style={styles.container}>
+        <View style={styles.topView}>
+        <View>
+         
+          <RadioForm
+            radio_props={options}
+            buttonColor={colors.gray}
+            selectedButtonColor={colors.green}
+            initial={0}
+            onPress={(value) => {
+              setChosenOption(value);
+            }}
+            labelStyle={styles.labelText}
+            formHorizontal={true}
+            style={styles.radioButton}
           />
+         
           <View style={styles.inputView}>
             <Dropdown
+              style={styles.dropdown}
               placeholderStyle={styles.placeholderStyle}
-              data={[{ label: "Personal", photoTypeValue: "1" }]}
-              labelField="label"
-              valueField="photoTypeValue"
-              placeholder={"PhotoType"}
-              value={photoTypeValue}
+              selectedTextStyle={styles.selectedTextStyle}
+              inputSearchStyle={styles.inputSearchStyle}
+              iconStyle={styles.iconStyle}
+              data={[
+                { label: "Candate", vendor: "1" },
+                { label: "ndor", vendor: "2" },
+                { label: "Cient", vendor: "3" },
+              ]}
+              labelField={"label"}
+              valueField={"vendor"}
+              placeholder="Name Of Vendor Company"
+              value={vendor}
+              onFocus={() => setIsFocusVendor(true)}
+              onBlur={() => setIsFocusVendor(false)}
               onChange={(item) => {
-                setPhotoTypeValue(item.photoTypeValue);
-                setIsFocusPhotoType(false);
+                setVendor(item.vendor);
+                setIsFocusVendor(false);
               }}
             />
           </View>
-          <View style={styles.inputView}>
+          <View style={styles.inputView1}>
             <Input
               placeholder={"Requirement"}
               onChangeText={setRequirement}
               value={requirement}
               secureTextEntry={undefined}
+              color={colors.black}
             />
           </View>
+          <View style={styles.inputView1}>
+            <Input
+              placeholder={"Name"}
+              onChangeText={setName}
+              value={name}
+              secureTextEntry={undefined}
+              color={colors.black}
+            />
+          </View>
+          <View style={styles.inputView1}>
+            <Input
+              placeholder={"Contact Number"}
+              onChangeText={setPhoneNo}
+              value={phoneNo}
+              secureTextEntry={undefined}
+              color={colors.black}
+            />
+          </View>
+          <View style={styles.inputView1}>
+            <Input
+              placeholder={"Email"}
+              onChangeText={setEmailAddress}
+              value={emailAddress}
+              secureTextEntry={undefined}
+            />
+          </View>
+          <View style={styles.inputView1}>
+          <Button
+            color={colors.white}
+            buttonText="Upload Photo"
+            onPress={setPhoto}
+            bgColor={undefined}
+          />
+          </View>
         </View>
-      </ScrollView>
-    </SafeAreaView>
+        </View>
+				</View>
+			{/* )} */}
+		</SafeAreaView>
+    // </ScrollView>
   );
 };
 export default CreateClient;

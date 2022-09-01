@@ -1,25 +1,49 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
-
+import {
+	scale,
+	moderateScale,
+	moderateVerticalScale,
+} from "react-native-size-matters";
 export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
+    justifyContent: "center",
   },
+  safeView: {
+		flex: 1,
+		backgroundColor: colors.white,
+	},
+	
+	btnView: {
+		marginTop: moderateVerticalScale(30),
+	},
+	topView: {
+		flex: 1,
+		margin: moderateScale(30),
+	},
   BoxContainer: {
-    flex: 1,
-    alignItems: "center",
+    // flex: 1,
+    // alignItems: "center",
   },
   inputView: {
-    borderColor: colors.silverChalice,
-    width: "90%",
-    height: 60,
-    marginVertical: 20,
+    borderColor: colors.Amber,
+    width: "99%",
+    marginVertical: 10,
     paddingHorizontal: 10,
     borderWidth: 1,
     color: colors.black,
-  },
-  placeholderTextColor: {
+    borderRadius:5,
+    },
+  
+  inputView1: {
+    width: "100%",
+    // paddingHorizontal: 10,
+    color: colors.black, 
+    fontSize: 16, },
+
+    placeholderTextColor: {
     color: colors.black,
   },
 
@@ -49,10 +73,10 @@ export default StyleSheet.create({
     fontSize: 14,
   },
   placeholderStyle: {
-    fontSize: 15,
+    fontSize: 16,
     color: colors.gray,
-    paddingVertical: 52,
-    paddingHorizontal: 5,
+    // paddingVertical: 52,
+    // paddingHorizontal: 5,
   },
 
   labelText: {
@@ -62,4 +86,16 @@ export default StyleSheet.create({
   radioButton: {
     margin: 20,
   },
+  dropdown: {
+    margin:7,
+      height: 35, 
+      },
+      iconStyle: {
+        width: 20,
+        height: 20,
+      },
+      inputSearchStyle: {
+        height: 40,
+        fontSize: 16,
+      },
 });
