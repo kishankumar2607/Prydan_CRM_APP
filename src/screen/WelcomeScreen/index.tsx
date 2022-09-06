@@ -6,14 +6,19 @@ import AppIntroSlider from "react-native-app-intro-slider";
 import { LoginButton, SignUpButton } from "../../components";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { colors } from "../../constants";
-import { Login, SignUp } from "../../screen/index.js";
 
 const WelcomeScreen: FC = ({ navigation }) => {
 	const RenderNextButton = () => {
 		return (
-			<View style={styles.buttonCircle}>
-				<AntDesign name={"arrowright"} size={15} color={colors.black} />
-			</View>
+			<>
+				<View style={styles.buttonCircle}>
+					<AntDesign
+						name={"arrowright"}
+						size={15}
+						color={colors.black}
+					/>
+				</View>
+			</>
 		);
 	};
 	const dotsView = () => {
@@ -30,24 +35,26 @@ const WelcomeScreen: FC = ({ navigation }) => {
 
 	const RenderItem = ({ item }) => {
 		return (
-			<View style={styles.mainView}>
-				<View style={styles.logo}>
-					<Image
-						style={styles.introImageStyle}
-						source={Images.appLogo}
-					/>
+			<>
+				<View style={styles.mainView}>
+					<View style={styles.logo}>
+						<Image
+							style={styles.introImageStyle}
+							source={Images.appLogo}
+						/>
+					</View>
+					<View style={styles.logoView}>
+						<Image source={item.image} />
+					</View>
+					<View style={{ flex: 1 }}>
+						<Text style={styles.introTitleStyle}>{item.title}</Text>
+						<Text style={styles.introTextStyle}>{item.text}</Text>
+						<Text style={styles.introSmallTextStyle}>
+							{item.smallText}
+						</Text>
+					</View>
 				</View>
-				<View style={styles.logoView}>
-					<Image source={item.image} />
-				</View>
-				<View style={{ flex: 1 }}>
-					<Text style={styles.introTitleStyle}>{item.title}</Text>
-					<Text style={styles.introTextStyle}>{item.text}</Text>
-					<Text style={styles.introSmallTextStyle}>
-						{item.smallText}
-					</Text>
-				</View>
-			</View>
+			</>
 		);
 	};
 
@@ -63,16 +70,16 @@ const WelcomeScreen: FC = ({ navigation }) => {
 			/>
 			<View style={{ flexDirection: "row", justifyContent: "center" }}>
 				<View>
-					<TouchableOpacity
+					{/* <TouchableOpacity
 						onPress={() => navigation.navigate("Login")}
-					>
-						<View style={styles.containerViewLogin}>
-							<LoginButton
-								buttonText="Log in"
-								onPress={() => navigation.navigate("Login")}
-							/>
-						</View>
-					</TouchableOpacity>
+					> */}
+					<View style={styles.containerViewLogin}>
+						<LoginButton
+							buttonText="Log in"
+							onPress={() => navigation.navigate("Login")}
+						/>
+					</View>
+					{/* </TouchableOpacity> */}
 				</View>
 				<View>
 					<TouchableOpacity

@@ -21,21 +21,10 @@ import { requestLogin, onLoginResponse } from "../../redux/actions/loginAction";
 import NetInfo from "@react-native-community/netinfo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Feather from "react-native-vector-icons/Feather";
-/**
- * @class Login
- * @description  UI design add for login ,when user forgot password they click on forgot password link for new password,google and linkedin authentication for direct login ,Signup link for those who have not create an account When click on login button it navigate to Today screen
- * @param  {Object} navigation - Use for navigation
- */
 
 const Login: FC = ({ navigation }) => {
-	/**
-
-   * @description email {string} - Email for login user.
-   * @description password {string} - Password for login user.
-   */
-
-	const [email, setEmail] = useState('bhavin.prydan@gmail.com');
-	const [password, setPassword] = useState('29112000');
+	const [email, setEmail] = useState("bhavin.prydan@gmail.com");
+	const [password, setPassword] = useState("29112000");
 
 	const [spinner, setSpinner] = useState(false);
 	const regex =

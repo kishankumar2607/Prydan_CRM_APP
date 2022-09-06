@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
-import { responsiveFontSize } from "react-native-responsive-dimensions";
 import {
 	scale,
 	verticalScale,
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	logo: {
-		marginVertical: moderateVerticalScale(40),
+		marginVertical: moderateVerticalScale(25),
 		marginBottom: moderateScale(1),
 		alignItems: "center",
 
@@ -36,7 +35,7 @@ const styles = StyleSheet.create({
 	logoView: {
 		// flex: 1,
 		// marginVertical: moderateVerticalScale(1),
-		marginTop: moderateScale(10),
+		marginTop: moderateScale(8),
 		// backgroundColor: colors.blue,
 	},
 
@@ -51,13 +50,13 @@ const styles = StyleSheet.create({
 	introTextStyle: {
 		fontSize: scale(14),
 		textAlign: "center",
-		marginHorizontal: moderateScale(30),
-		letterSpacing: scale(1),
-		lineHeight: moderateScale(22),
-		marginVertical: moderateVerticalScale(10),
+		marginHorizontal: moderateScale(25),
+		letterSpacing: scale(0.5),
+		lineHeight: moderateScale(18),
+		marginVertical: moderateVerticalScale(8),
 		color: colors.black,
-		fontFamily: "LeagueSpartan-Medium",
-		// fontFamily: "Roboto-Bold",
+		// fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 		// backgroundColor: colors.blue,
 	},
 	introTitleStyle: {
@@ -65,24 +64,23 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		color: colors.black,
 		marginVertical: moderateVerticalScale(5),
-		letterSpacing: scale(1),
-		// fontWeight: "800",
-		fontFamily: "LeagueSpartan-SemiBold",
-		// fontFamily: "Roboto-Bold",
+		letterSpacing: scale(0.5),
+		// fontFamily: "LeagueSpartan-SemiBold",
+		fontFamily: "Roboto-Bold",
 
 		// backgroundColor: colors.blue,
 	},
 	introSmallTextStyle: {
 		fontSize: scale(14),
-		letterSpacing: scale(1),
+		letterSpacing: scale(0.5),
 		lineHeight: moderateScale(22),
 		marginHorizontal: moderateScale(30),
 		textAlign: "center",
 		justifyContent: "center",
 		color: colors.black,
-		marginVertical: moderateVerticalScale(12),
-		fontFamily: "LeagueSpartan-Medium",
-		// fontFamily: "Roboto-Bold",
+		marginVertical: moderateVerticalScale(8),
+		// fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 		// backgroundColor: colors.blue,
 	},
 	// buttonView: {

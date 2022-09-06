@@ -38,7 +38,7 @@ export default StyleSheet.create({
 		fontSize: scale(24),
 		textAlign: "center",
 		marginVertical: moderateVerticalScale(15),
-		fontFamily: "LeagueSpartan-SemiBold",
+		fontFamily: "Roboto-Bold",
 	},
 	inputContainer: {
 		flexDirection: "row",
@@ -55,6 +55,7 @@ export default StyleSheet.create({
 		height: moderateScale(45),
 		color: colors.black,
 		flex: 1,
+		fontFamily: "Roboto-Medium",
 	},
 	optionsView: {
 		flexDirection: "row",
@@ -94,16 +95,18 @@ export default StyleSheet.create({
 	textView: {
 		flexDirection: "row",
 		justifyContent: "center",
-		marginVertical: moderateVerticalScale(15),
+		marginVertical: moderateVerticalScale(20),
 	},
 	text: {
-		fontSize: scale(14),
+		fontSize: scale(16),
 		color: colors.gray,
 		letterSpacing: scale(0.2),
+		fontFamily: "React-Medium",
 	},
 	link: {
 		color: colors.Amber,
-		fontSize: scale(14),
+		fontSize: scale(16),
 		letterSpacing: scale(0.2),
+		fontFamily: "Roboto-Bold",
 	},
 });

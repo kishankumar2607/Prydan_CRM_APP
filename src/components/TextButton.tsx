@@ -30,8 +30,8 @@ const TextButton: FC<TextButtonProps> = ({ text, onPress }) => {
 const styles = StyleSheet.create({
 	text: {
 		color: colors.Blueberry,
-		fontSize: scale(18),
-		fontFamily: "LeagueSpartan-Medium",
+		fontSize: scale(16),
+		fontFamily: "Roboto-Medium",
 	},
 });
 

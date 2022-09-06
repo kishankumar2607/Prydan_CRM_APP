@@ -13,6 +13,8 @@ target 'CRM_Mobile' do
   )
 
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'CRM_MobileTests' do
     inherit! :complete
     # Pods for testing

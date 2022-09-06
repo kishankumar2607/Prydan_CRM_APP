@@ -37,6 +37,6 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		alignItems: "center",
 		justifyContent: "center",
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 	},
 });

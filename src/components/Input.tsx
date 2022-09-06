@@ -7,14 +7,6 @@ import {
 	moderateScale,
 	moderateVerticalScale,
 } from "react-native-size-matters";
-/**
- * Renders a <TextInput /> component
- * @function TextInput Input component
- * @param  props.placeholder {string} - Placeholder of text input.
- * @param  props.value {string} - Value of text input.
- * @param  props.onChangeText {string} - Change Text event of text input.
- * @param  props.secureTextEntry {string} - Secure Text Entry for password
- */
 
 interface InputProps {
 	placeholder: string;
@@ -58,7 +50,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		fontSize: scale(16),
 		color: colors.black,
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 		// backgroundColor: colors.blue,
 	},
 });

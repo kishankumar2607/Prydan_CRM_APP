@@ -5,19 +5,7 @@ import {
 	responsiveHeight,
 	responsiveFontSize,
 } from "react-native-responsive-dimensions";
-import {
-	scale,
-	verticalScale,
-	moderateScale,
-	moderateVerticalScale,
-} from "react-native-size-matters";
-/**
- * Renders a <Button /> component
- * @function Button component
- * @param  props.buttonText {string} - the text in the button
- * @param  props.onPress {object} - the onpress event of the button
- * @param  props.color {object} - the color change of the button
- */
+import { scale } from "react-native-size-matters";
 
 interface ButtonProps {
 	buttonText: string;
@@ -53,10 +41,10 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 	},
 	text: {
-		fontSize: scale(22),
+		fontSize: scale(18),
 		alignItems: "center",
 		justifyContent: "center",
 		// fontWeight: "400",
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 	},
 });

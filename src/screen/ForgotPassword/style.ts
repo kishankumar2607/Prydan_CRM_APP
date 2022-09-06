@@ -28,28 +28,29 @@ export default StyleSheet.create({
 		alignSelf: "center",
 	},
 	heading: {
-		fontSize: scale(18),
+		fontSize: scale(22),
 		// marginVertical: moderateVerticalScale(25),
 		marginTop: moderateScale(25),
-		fontWeight: "700",
 		color: colors.black,
 		textAlign: "center",
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 		// backgroundColor: colors.blue,
 	},
 	smallText: {
 		fontSize: scale(16),
 		marginVertical: moderateVerticalScale(20),
+		marginHorizontal: moderateScale(-20),
 		color: colors.gray,
 		letterSpacing: scale(0.8),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-SemiBold",
+		// backgroundColor: "blue",
 	},
 	backText: {
 		color: colors.gray,
 		marginVertical: moderateVerticalScale(50),
 		fontSize: scale(16),
 		textAlign: "center",
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 		// flex: 0.2,
 	},
 	imageView: {
@@ -63,13 +64,11 @@ export default StyleSheet.create({
 	text1: {
 		bottom: moderateScale(2),
 		justifyContent: "space-between",
-		// flex: 1,
 	},
 	text: {
 		fontSize: scale(16),
 		color: colors.gray,
-		fontWeight: "400",
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	textView: {
 		// marginVertical: moderateVerticalScale(10),
@@ -81,7 +80,7 @@ export default StyleSheet.create({
 		alignContent: "center",
 		textAlign: "center",
 		top: scale(90),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	iconView: {
 		// marginVertical: 10,

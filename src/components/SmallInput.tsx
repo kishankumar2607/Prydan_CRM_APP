@@ -57,6 +57,6 @@ const styles = StyleSheet.create({
 		paddingHorizontal: moderateScale(16),
 		fontSize: scale(16),
 		color: colors.black,
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 });

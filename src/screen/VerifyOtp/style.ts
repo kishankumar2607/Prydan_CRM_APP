@@ -1,11 +1,6 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
 import {
-	responsiveHeight,
-	responsiveWidth,
-	responsiveFontSize,
-} from "react-native-responsive-dimensions";
-import {
 	scale,
 	verticalScale,
 	moderateScale,
@@ -41,7 +36,7 @@ export default StyleSheet.create({
 		fontWeight: "700",
 		textAlign: "center",
 		color: colors.gray,
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 		// letterSpacing: 1,
 	},
 	heading: {
@@ -50,7 +45,7 @@ export default StyleSheet.create({
 		fontWeight: "700",
 		textAlign: "center",
 		color: colors.black,
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	cellText: {
 		color: colors.black,
@@ -68,6 +63,6 @@ export default StyleSheet.create({
 		color: colors.black,
 		fontSize: scale(20),
 		marginVertical: moderateVerticalScale(5),
-		fontFamily: "LeagueSpartan-Bold",
+		fontFamily: "Roboto-Bold",
 	},
 });

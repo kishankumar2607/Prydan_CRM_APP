@@ -40,10 +40,10 @@ export default StyleSheet.create({
 	HeadingText: {
 		// fontWeight: "bold",
 		color: colors.black,
-		fontSize: scale(24),
-		marginVertical: moderateVerticalScale(25),
+		fontSize: scale(22),
+		marginVertical: moderateVerticalScale(20),
 		textAlign: "center",
-		fontFamily: "LeagueSpartan-SemiBold",
+		fontFamily: "Roboto-Bold",
 	},
 	optionsView: {
 		flexDirection: "row",
@@ -67,7 +67,7 @@ export default StyleSheet.create({
 	SignInBtnView: {
 		flexDirection: "row",
 		justifyContent: "center",
-		marginVertical: moderateVerticalScale(15),
+		marginVertical: moderateVerticalScale(12),
 		// backgroundColor: colors.blue,
 		// flex: 1,
 	},
@@ -92,6 +92,7 @@ export default StyleSheet.create({
 		letterSpacing: scale(0.7),
 		textAlign: "center",
 		alignContent: "center",
+		fontFamily: "Roboto-Medium",
 	},
 	text2: {
 		color: colors.black,
@@ -100,11 +101,13 @@ export default StyleSheet.create({
 		textAlign: "center",
 		alignContent: "center",
 		marginVertical: moderateVerticalScale(2),
+		fontFamily: "Roboto-Medium",
 	},
 	text3: {
-		fontSize: scale(14),
+		fontSize: scale(16),
 		color: colors.gray,
 		letterSpacing: scale(0.8),
+		fontFamily: "Roboto-Bold",
 	},
 	boxTextView: {
 		flexDirection: "row",
@@ -116,8 +119,9 @@ export default StyleSheet.create({
 	},
 	link: {
 		color: colors.Amber,
-		fontSize: scale(14),
+		fontSize: scale(16),
 		letterSpacing: scale(0.2),
+		fontFamily: "Roboto-Bold",
 	},
 	bottomLineView: {
 		borderBottomColor: colors.gray,

@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
 	text: {
 		fontSize: responsiveFontSize(2.2),
 		color: colors.YankeesBlue,
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Bold",
 	},
 });
