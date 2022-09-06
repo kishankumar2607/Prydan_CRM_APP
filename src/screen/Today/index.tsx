@@ -14,15 +14,7 @@ import { colors } from "../../constants";
 
 import Images from "../../utils/Images";
 
-/**
- * @class  ForgotPassword
- * @param  {Object} navigation - Use for navigation
- * @description User enter email ID and click on reset password button, in that time Help is On The Way message popup if user want to go back to login screen click on back to home link
- */
 const Today: FC = ({ navigation }) => {
-	/**
-	 * @description email {string} - email for login user.
-	 */
 	const [spinner, setSpinner] = useState(false);
 
 	return (
@@ -107,7 +99,9 @@ const Today: FC = ({ navigation }) => {
 							</View>
 							<View style={styles.icon}>
 								<TouchableOpacity
-								onPress={() => navigation.navigate("CreateClient")}
+									onPress={() =>
+										navigation.navigate("CreateClient")
+									}
 								>
 									<Image source={Images.plus} />
 								</TouchableOpacity>

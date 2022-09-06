@@ -5,7 +5,7 @@ import {
 	responsiveHeight,
 	responsiveFontSize,
 } from "react-native-responsive-dimensions";
-import { scale } from "react-native-size-matters";
+import { scale, moderateScale } from "react-native-size-matters";
 
 interface ButtonProps {
 	buttonText: string;
@@ -34,7 +34,7 @@ export default Button;
 const styles = StyleSheet.create({
 	button: {
 		backgroundColor: colors.Amber,
-		height: responsiveHeight(6.5),
+		height: moderateScale(50),
 		alignItems: "center",
 		justifyContent: "center",
 		marginVertical: 15,
@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
 		fontSize: scale(18),
 		alignItems: "center",
 		justifyContent: "center",
-		// fontWeight: "400",
 		fontFamily: "Roboto-Bold",
 	},
 });

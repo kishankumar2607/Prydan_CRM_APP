@@ -1,16 +1,12 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
-import {
-	responsiveHeight,
-	responsiveWidth,
-	responsiveFontSize,
-} from "react-native-responsive-dimensions";
+
 import {
 	scale,
-	verticalScale,
 	moderateScale,
 	moderateVerticalScale,
 } from "react-native-size-matters";
+
 export default StyleSheet.create({
 	safeView: {
 		flex: 1,
@@ -24,7 +20,6 @@ export default StyleSheet.create({
 
 	topView: {
 		flex: 1,
-
 		margin: moderateScale(10),
 	},
 	mainView: {
@@ -63,25 +58,25 @@ export default StyleSheet.create({
 		marginVertical: moderateVerticalScale(12),
 		color: colors.black,
 		fontSize: scale(24),
-		fontFamily: "LeagueSpartan-SemiBold",
+		fontFamily: "Roboto-Medium",
 	},
 	greetingText: {
 		color: colors.gray,
 		fontSize: scale(16),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	headerText: {
 		color: colors.black,
 		fontSize: scale(18),
 		paddingVertical: moderateVerticalScale(5),
 		marginHorizontal: moderateScale(5),
-		fontFamily: "LeagueSpartan-SemiBold",
+		fontFamily: "Roboto-Medium",
 	},
 	smallText: {
 		color: colors.gray,
 		fontSize: scale(16),
 		marginHorizontal: moderateScale(50),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	smallText1: {
 		alignItems: "center",
@@ -102,13 +97,13 @@ export default StyleSheet.create({
 	textHeading: {
 		fontSize: scale(16),
 		marginVertical: moderateVerticalScale(4),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 	},
 	textView: {
 		marginRight: moderateScale(20),
 		color: colors.gray,
 		fontSize: scale(16),
-		fontFamily: "LeagueSpartan-Medium",
+		fontFamily: "Roboto-Medium",
 		// backgroundColor: colors.blue,
 	},
 	icon: {

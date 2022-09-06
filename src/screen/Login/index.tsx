@@ -23,8 +23,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Feather from "react-native-vector-icons/Feather";
 
 const Login: FC = ({ navigation }) => {
-	const [email, setEmail] = useState("bhavin.prydan@gmail.com");
-	const [password, setPassword] = useState("29112000");
+	const [email, setEmail] = useState("kishankumardas.prydan@gmail.com");
+	const [password, setPassword] = useState("Kishan@2672001");
 
 	const [spinner, setSpinner] = useState(false);
 	const regex =
@@ -55,11 +55,12 @@ const Login: FC = ({ navigation }) => {
 				loginResponse.hasOwnProperty("status")
 			) {
 				if (loginResponse?.status === 200) {
+					Alert.alert("Success", loginResponse.data.message);
 					await AsyncStorage.setItem(
 						"UserDetails",
 						JSON.stringify(loginResponse?.data),
 					);
-					// navigation.navigate("AppNavigator");
+					navigation.navigate("AppNavigator");
 					setEmail("");
 					setPassword("");
 					// Alert.alert("Success", loginResponse.data.message);

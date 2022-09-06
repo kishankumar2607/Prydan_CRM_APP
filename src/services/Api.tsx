@@ -2,7 +2,7 @@ import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // const BASE_URL = "http://103.1.100.53:5000";
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "http://192.168.1.53:8000";
 
 const getAccessToken = async () => {
 	const UserDetails = await AsyncStorage.getItem("UserDetails");

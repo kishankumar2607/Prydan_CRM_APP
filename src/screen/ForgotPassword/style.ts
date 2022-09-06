@@ -79,7 +79,7 @@ export default StyleSheet.create({
 		letterSpacing: scale(0.2),
 		alignContent: "center",
 		textAlign: "center",
-		top: scale(90),
+		top: moderateScale(90),
 		fontFamily: "Roboto-Medium",
 	},
 	iconView: {
